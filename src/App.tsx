@@ -15,7 +15,7 @@ function AppContent() {
   return (
     <ConfigProvider
       theme={{
-        algorithm: theme.darkAlgorithm
+        algorithm: theme.darkAlgorithm,
       }}
     >
       <VoiceHelper/>

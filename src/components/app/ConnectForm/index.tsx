@@ -12,12 +12,12 @@ export default function ConnectForm() {
     setLoading(true);
     if (peers.find(x => x.username === values.peerId)) {
       setLoading(false);
-      return message.error('Already connected to this peer');
+      return message.error('Bạn đã kết nối với người này');
     }
     PeerService.connect(values.peerId).then(() => {
       setLoading(false);
     }).catch(e => {
-      message.error("Failed to connect.");
+      message.error("Kết nối thất bại");
       setLoading(false);
     });
   }
@@ -34,12 +34,12 @@ export default function ConnectForm() {
           >
             <Input
               disabled={loading}
-              placeholder={'Other peer username...'}
+              placeholder={'Thêm người dùng khác...'}
             />
           </Form.Item>
           <Form.Item>
             <Button block type={'primary'} htmlType={'submit'} loading={loading}>
-              Connect
+              Kết nối
             </Button>
           </Form.Item>
         </div>

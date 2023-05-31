@@ -18,7 +18,7 @@ export default function EnqueueInput() {
     try {
       const track = await prepareTrack(url);
       if (queue.find(t => t.id === track.id)) {
-        throw new Error("Track already in queue");
+        throw new Error("Bài hát đã có trong danh sách phát");
       }
       peerService.sendAll(encodeURIComponent(JSON.stringify({
         action: 'enqueue',
@@ -44,7 +44,7 @@ export default function EnqueueInput() {
       onPressEnter={submit}
     />
     <Button onClick={submit} loading={loading}>
-      Add
+      Thêm
     </Button>
   </div>
 }

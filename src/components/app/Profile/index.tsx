@@ -23,7 +23,7 @@ export default function ProfileCard() {
           </Typography.Text>
           <Tooltip
             trigger={'click'}
-            title={'Copied!'}
+            title={'Đã sao chép!'}
           >
             <Tag
               style={{cursor: 'pointer'}}
@@ -48,16 +48,16 @@ export default function ProfileCard() {
       <Divider/>
       <ConnectForm/>
       <Alert
-        message={`${peers.length} peers connected`}
+        message={`${peers.length} người dùng đã kết nối`}
         action={
           <Button size="small" type="text" onClick={() => setPeersModal(true)}>
-            See all
+            Tất cà
           </Button>
         }
       />
       <Modal
         open={peersModal}
-        title={'Connected Peers'}
+        title={'Danh sách người dùng đã kết nối'}
         onCancel={() => setPeersModal(false)}
       >
         <List

@@ -50,7 +50,7 @@ export const switchInputDevice = createAsyncThunk('app/switch-voice-input', asyn
     }
 
   } else {
-    return Promise.reject('Media devices not supported.');
+    return Promise.reject('Thiết bị đa phương tiên không được hỗ trợ');
   }
   return deviceId;
 });

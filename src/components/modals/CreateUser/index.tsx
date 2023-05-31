@@ -20,7 +20,7 @@ export default function CreateUserModal() {
   }
 
   return <Modal
-    title={'Join Boombox'}
+    title={'Tham gia BoomBox'}
     open={!profile}
     footer={null}
   >
@@ -38,10 +38,10 @@ export default function CreateUserModal() {
         </a>
         <Form.Item
           name={'name'}
-          label={'Your name'}
+          label={'Tên của bạn...'}
           className={styles.userInputWrapper}
         >
-          <Input placeholder={'John Doe'}/>
+          <Input placeholder={'Nguyễn Tuấn'}/>
         </Form.Item>
       </div>
       {showEmojiPicker && (
@@ -56,7 +56,7 @@ export default function CreateUserModal() {
       )}
       <Form.Item style={{marginBottom: 8, marginTop: 8, display: 'flex', justifyContent: 'flex-end'}}>
         <Button type={'primary'} htmlType={'submit'}>
-          Finish
+          Tham gia
         </Button>
       </Form.Item>
     </Form>

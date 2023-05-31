@@ -86,7 +86,7 @@ export default function ChatBox() {
           return message.error('Error enumerating devices.');
         });
     } else {
-      return message.error('Media devices not supported.');
+      return message.error('Thiết bị đa phương tiện không được hỗ trợ');
     }
 
   }, [voicePermitted]);

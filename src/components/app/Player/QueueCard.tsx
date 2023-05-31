@@ -13,7 +13,7 @@ export default function QueueCard() {
   const dispatch = useAppDispatch();
   return <Card
     className={styles.queueCard}
-    title={'Queue'}
+    title={'Tiếp theo'}
     bodyStyle={{padding: 0}}
     extra={<>
       <EnqueueInput/>
